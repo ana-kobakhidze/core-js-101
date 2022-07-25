@@ -116,33 +116,57 @@ function fromJSON(proto, json) {
  */
 
 const cssSelectorBuilder = {
+  // result: ' ',
   element(/* value */) {
+    // const obj = Object.create(cssSelectorBuilder);
+    // obj.result = this.result + value;
+    // return obj;
     throw new Error('Not implemented');
   },
 
   id(/* value */) {
+    // const obj = Object.create(cssSelectorBuilder);
+    // obj.result = `${this.result}#${value}`;
+    // return obj;
     throw new Error('Not implemented');
   },
 
   class(/* value */) {
+    // const obj = Object.create(cssSelectorBuilder);
+    // obj.result = `${this.result}.${value}`;
+    // return obj;
     throw new Error('Not implemented');
   },
 
   attr(/* value */) {
+    // const obj = Object.create(cssSelectorBuilder);
+    // obj.result = `${this.result}[${value}]`;
+    // return obj;
     throw new Error('Not implemented');
   },
 
   pseudoClass(/* value */) {
+    // const obj = Object.create(cssSelectorBuilder);
+    // obj.result = `${this.result}:${value}`;
+    // return obj;
     throw new Error('Not implemented');
   },
 
   pseudoElement(/* value */) {
+    // const obj = Object.create(cssSelectorBuilder);
+    // obj.result = `${this.result}::${value}`;
+    // return obj;
     throw new Error('Not implemented');
   },
 
   combine(/* selector1, combinator, selector2 */) {
+    // const obj = Object.create(cssSelectorBuilder);
+    // obj.result = `${selector1.result} ${combinator} ${selector2.result}`;
     throw new Error('Not implemented');
   },
+//  stringify(){
+//    return this.result;
+//  }
 };
 
 
